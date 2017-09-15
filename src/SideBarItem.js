@@ -16,7 +16,7 @@ class SideBarItem extends Component {
 				to={this.props.linkTo}
 				key={this.props.i}
 			>
-				<MenuItem onTouchTap={this.props.handleClose}>{this.props.primaryText}</MenuItem>
+				<MenuItem onClick={this.props.handleClose}>{this.props.primaryText}</MenuItem>
 			</NavLink>
 		);
 	}

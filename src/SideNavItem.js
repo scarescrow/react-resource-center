@@ -29,6 +29,7 @@ class SideNav extends Component {
 				<Drawer
 					open={this.state.open}
 					onRequestClose={() => this.setState({open: false})}
+					onClick={this.handleClose}
 				>
 					{links.map((link, i) => {
 						return (
